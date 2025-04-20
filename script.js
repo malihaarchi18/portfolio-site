@@ -10,7 +10,7 @@ screen1.classList.add('active');
 setTimeout(() => {
   screen1.classList.remove('active');
   screen2.classList.add('active');
-}, 3000);
+}, 4000);
 
 // Step 3: After another 5s, show final screen
 setTimeout(() => {
