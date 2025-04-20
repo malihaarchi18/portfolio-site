@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maliha's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+
+<!-- Screen 1: Quote -->
+<div class="screen" id="screen1">
+    <div class="loader">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+</div>
+<div class="quote-wrapper">
+      <div class="quote">“Whatever doesn’t kill you makes you stronger.”</div>
+      <div class="author">— Friedrich Nietzsche</div>
+    </div>
+</div>
+
+  <!-- Screen 2: Intro -->
+<div class="screen" id="screen2">
+    <div class="loader">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <div class="intro-wrapper">
+      <div class="image-container">
+        <img src="./images/profile img.png" alt="Maliha" class="profile-img" />
+      </div>
+      <div class="intro"> Hi, This is Maliha</div>
+      <div class="subtext">I chase patterns in data 📊 and poetry in logic 🧠✨</div>
+      
+    </div>
+  </div>
+  
+  
+
+  <!-- Screen 3: Homepage -->
+  <div class="screen" id="screen3">
+    <div class="container">
+      <div class="sidebar">
+        <nav>
+          <a href="#about">Home</a>
+          <hr class="sidebar-divider">
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#projects">Projects</a>
+          <a href="#publications">Publications</a>
+          <a href="#contact-form">Contact Me</a>
+        </nav>
+      </div>
+  
+      <div class="content">
+        <section id="about" class="section">
+          <h1>About Me</h1>
+          <div class="about-wrapper">
+            <!-- Image Section -->
+            <div class="about-photo-container">
+              <img src="./images/profile img.png" alt="My Photo" class="about-photo" />
+            </div>
+          
+            <!-- Only the first paragraph beside image -->
+            <div class="about-text">
+              <p>
+                I was born in Noapara, Jashore — a beautiful town in my lovely country, Bangladesh.
+                I was the youngest child 👶 in my family, and being the ‘baby’ of the house, I was always surrounded by love 💖 and laughter 😄,
+                which made my childhood filled with warmth 🌞 and joy 🥰.
+              </p>
+            </div>
+          </div>
+        
+          <div class="about-text-full">
+            <p>
+              Later, my family moved to proper Jashore, a place rich in culture and heritage 🏰. 
+              It was there, amidst the vibrant streets and the echoes of history, that I spent my teenage years 🌱. 
+              It was in Jashore that I completed my secondary and higher schooling 🎓, and those years became a foundation for the person I am today.
+            </p><br>
+          
+            <p>
+              All my life, I dreamt of becoming an engineer 👩‍🔧. 
+              As a child, I used to watch TV commercials where engineers stood confidently on scenic sites, wearing safety helmets under the open sky ⛅.
+              I was mesmerized by that world and dreamt of becoming someone like that—building something meaningful, leaving a mark on the world ✨.
+            </p><br>
+            <div class="more-text" id="moreText">
+            <p>
+            But life has its own way of weaving stories 🌸. 
+            In 2017, I got admitted to Khulna University, Bangladesh 🇧🇩, earning the 46th position in the entrance exam. Instead of civil engineering, 
+            fate led me into the fascinating world of Computer Science and Engineering (CSE) 💻—a path I hadn't imagined, but one that became a turning point in my journey 🚀.
+           </p> <br>
+           <p>
+            But the path was far from easy 🌪️. CSE at Khulna University broke me, tested me, and reshaped me. 
+            I stumbled through fear—of programming, of retakes—but I rose again, stronger each time 🌱. 
+            Over time, I fell in love with coding 💻, embraced challenges, and turned struggles into stories of growth. 
+            What began as fear transformed into passion, and I completed the journey with pride. 
+            KU will always be my second home 🏡—a place that broke me just enough to build me back, better.
+           </p><br>
+           <p>
+            I feel incredibly lucky to be part of the fascinating world of Computer Science 💻. 
+            To me, CS is more than just technology—it's a powerful tool for solving diverse problems across our society and the world at large 🌍. 
+            I’m especially drawn to research that creates real impact, from everyday individuals to academic communities 📚.
+           </p><br>
+           <p>
+            My passion lies at the intersection of Software Engineering and AI-driven automation, where I strive to bridge the gap between these domains. 
+            Alongside this, my current focus revolves around data analysis, data engineering, and data science 📊. 
+            Lately, I’ve been deeply intrigued by the transformative potential of Large Language Models (LLMs) and Generative AI 🤖✨.
+           </p><br>
+           <p>Beyond academics and research, I have a wide range of interests that bring color to my life 🎨. 
+            Flowers, books, chocolates, forests, and all things green 🍃📚🍫 reflect the essence of who I am. 
+            I find joy pouring my heart into creating a warm, nurturing home 🏡.</p><br>
+            <p>
+               Currently, I’m living in Arlington with my husband, embracing this beautiful phase of life as we grow and explore together 🌿.
+               If all goes well, I’m truly excited to begin my next academic chapter—pursuing a Master’s in Information Systems at UTA 🤍—a journey I look forward to with hope and determination.
+            </p> <br>
+            <p>And that’s me—a dreamer, a doer, and a lifelong learner, always striving to grow, give, and go beyond. ✨</p>
+          </div>
+          <button onclick="toggleMore()" id="toggleBtn"> See More </button>
+        </div>
+          
+          
+        </section>
+  
+        <section id="skills" class="section">
+            <h1>Skills</h1>
+            <h2>💻 Programming Languages</h2>
+            <div class="skill-table">
+              <table border="1" cellspacing="0" cellpadding="8">
+                <thead>
+                  <tr>
+                    <th>Language</th>
+                    <th>Tools/Frameworks</th>
+                    <th>Relevant Experience</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="2">Python</td>
+                    <td rowspan="2">Tkinter, Pandas, NumPy, Matplotlib</td>
+                    <td style="color:blue"><u>MindMatrix: A Matrix Calculator</u></td>
+                  </tr>
+                  <tr>
+                    <td style="color:blue"><u>Tic-Tac-Toe</u></td>
+                  </tr>
+                  <tr>
+                    <td>PhP</td>
+                    <td>Laravel</td>
+                    <td style="color:orange"><u>Emart: A Homemade Product Market </u></td>
+                  </tr>
+                  <tr>
+                    <td>JavaScript</td>
+                    <td>jQuery, Vanilla JS</td>
+                    <td style="color:greenyellow"><u>Eden's Coil: A snake game</u></td>
+                  </tr>
+                    <tr>
+                        <td rowspan="2" >C++</td>
+                        <td rowspan="2">Standard Template Library (STL)</td>
+                        <td style="color:blue"><u>View my Codeforces Handle</u></td>
+                      </tr>
+                      <tr>
+                        <td style="color:blue"><u>View my Leetcode Profile</u></td>
+                      </tr>
+                  <tr>
+                    <td>SQL</td>
+                    <td>MySQL, PostgreSQL</td>
+                    <td style="color:rgb(182, 179, 193)"><u>BookHub:An Online Library Mannagement System</u></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div><br><br>
+        
+          <h2>🌐 Web Technology</h2>
+          <div class="skill-table">
+            <table border="1" cellspacing="0" cellpadding="8">
+              <thead>
+                <tr>
+                  <th>Technology</th>
+                  <th>Tools/Frameworks</th>
+                  <th>Relevant Experience</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="3">CSS</td>
+                  <td rowspan="3">Bootstrap,Tailwind, Sass</td>
+                  <td style="color:blue"><u>Doug Russel Park Website</u></td>
+                </tr>
+                <tr>
+                  <td style="color:magenta"><u>Clone of Sephora</u></td>
+                </tr>
+                <tr>
+                    <td style="color:yellow"><u>Pineapple on Pizza: Your customized recipe book!</u></td>
+                </tr>
+                <tr>
+                  <td>PhP</td>
+                  <td>Laravel</td>
+                  <td style="color:aqua"><u>Question Bank Generator</u></td>
+                </tr>
+                <tr>
+                  <td>Python</td>
+                  <td>Django</td>
+                  <td style="color:red"><u>Today I learn ( TIL Project )</u></td>
+                </tr>
+              </tbody>
+            </table>
+          </div><br><br>
+
+          <h2>🧠📊Data Science and Machine Learning</h2>
+          <div class="skill-table">
+            <table border="1" cellspacing="0" cellpadding="8">
+              <thead>
+                <tr>
+                  <th>Technology</th>
+                  <th>Tools/Frameworks</th>
+                  <th>Relevant Experience</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Data Visualization</td>
+                  <td>Matplotlib, Seaborn, Power BI, Tableau, Microsoft Excel</td>
+                  <td style="color:palevioletred"><u>Monthly Grocery Analysis</u></td>
+                </tr>
+                <tr>
+                  <td>Machine Learning</td>
+                  <td>Scikit-learn, XGboost, LightGBM</td>
+                  <td style="color:goldenrod"><u>House Price Prediction</u></td>
+                </tr>
+                <tr>
+                  <td>Big Data</td>
+                  <td>Hadoop, Spark, Kafka</td>
+                  <td><u>Sample Project</u></td>
+                </tr>
+                <tr>
+                    <td>Deep Learning</td>
+                    <td>Tensorflow, Keras, PyTorch</td>
+                    <td><u>Sample Project</u></td>
+                  </tr>
+              </tbody>
+            </table>
+          </div><br><br>
+          <h2>☁️ Cloud Platforms: AWS, Google Cloud, Azure</h2><br>
+
+          <p style="font-size: 1.2rem; margin-top: 20px; color: #f0f0f0;">
+            <span style="color: #ffcc00;">🎯 Apart from that,</span>
+            I’m deeply <span style="color: #66ffcc;">fascinated</span> by fields like
+            <span style="color: #ff6666;">Human-Centered Computing</span>,
+            <span style="color: #66b3ff;">Natural Language Processing (NLP)</span>,
+            <span style="color: #ff99cc;">Cybersecurity & Privacy</span>,
+            <span style="color: #99ff99;">Digital Humanities</span>, and
+            <span style="color: #cc99ff;">Geographic Information Systems (GIS)</span>,
+            and I’m <span style="color: #00e6e6;">eager to explore</span> and contribute to these areas as I grow in my journey.
+          </p>
+          
+
+          </section>
+          
+          
+  
+        <section id="experience" class="section">
+           
+                <h1 style="color: #f0f0f0;">🛠️ Experience</h1>
+              
+                <!-- Research Assistant -->
+                <div style="margin-bottom: 30px;">
+                  <h2 style="color: #66ffcc;">🔬 Research Assistant</h2>
+                  <p style="color: #ccc;"><strong>Institution:</strong> Khulna University</p>
+                  <p style="color: #ccc;"><strong>Project:</strong> Automation of Detection and Fixing of Context-Adaptation Bugs in Micro-Clones</p>
+                  <p style="color: #ccc;"><strong>Duration:</strong> March 2022 – December 2022</p>
+                  <p style="color: #f0f0f0;"><strong>Key Responsibilities:</strong></p>
+                  <ul style="color: #ddd; padding-left: 20px;">
+                    <li>Investigated context adaptation bugs for micro-clones and manually analyzed them.</li>
+                    <li>Compared the intensity of context bugs between regular clones and micro-clones.</li>
+                  </ul>
+                </div><hr><br>
+              
+                <!-- Industrial Training -->
+                <div style="margin-bottom: 30px;">
+                  <h2 style="color: #66b3ff;">🏢 Industrial Training</h2>
+                  <p style="color: #ccc;"><strong>Organization:</strong> Information, Communication & Technology (ICT) Cell, Khulna University, Bangladesh</p>
+                  <p style="color: #ccc;"><strong>Duration:</strong> June 2022</p>
+                  <p style="color: #f0f0f0;"><strong>Activities:</strong></p>
+                  <ul style="color: #ddd; padding-left: 20px;">
+                    <li>Attended training workshops.</li>
+                    <li>Gained hands-on understanding of network and system design with real-world implementations.</li>
+                  </ul>
+                </div><hr><br>
+              
+                <!-- UNA Mavericks Volunteer -->
+                <div style="margin-bottom: 30px;">
+                  <h2 style="color: #ff99cc;">🌍 Volunteer Experience</h2>
+                  <p style="color: #ccc;"><strong>Organization:</strong> United Nations Association Mavericks (UNA Mavericks), UTA</p>
+                  <p style="color: #ccc;"><strong>Role:</strong> Volunteer</p>
+                  <p style="color: #ccc;"><strong>Duration:</strong> April 2025 – Present</p>
+                  <p style="color: #f0f0f0;"><strong>Contributions:</strong></p>
+                  <ul style="color: #ddd; padding-left: 20px;">
+                    <li>Participated in programs such as bake sales and fundraising events.</li>
+                    <li>Baked cakes and contributed to event organization.</li>
+                    <li>Engaged in various presentations and awareness activities.</li>
+                  </ul>
+                </div><hr><br>
+              
+                <!-- CSE Fest Volunteer -->
+                <div style="margin-bottom: 30px;">
+                  <h2 style="color: #ffcc66;">🎉 Volunteer & Organizer</h2>
+                  <p style="color: #ccc;"><strong>Event:</strong> CSE Fest, Khulna University</p>
+                  <p style="color: #ccc;"><strong>Roles:</strong> Volunteer (2019), Organizing Committee Member (2022)</p>
+                  <p style="color: #f0f0f0;"><strong>Activities:</strong></p>
+                  <ul style="color: #ddd; padding-left: 20px;">
+                    <li>Volunteered in CSE Fest 2019, assisting in event coordination.</li>
+                    <li>Served as a core organizing committee member in CSE Fest 2022.</li>
+                    <li>Actively participated in event management and cultural programs.</li>
+                  </ul>
+                </div>
+              </section>
+              
+        </section>
+  
+        <section id="education" class="section">
+            <h1 style="color: #f0f0f0; font-size: 2em; margin-bottom: 1.5rem;">🎓 Education</h1>
+          
+            <!-- MSIS - UTA -->
+            <div style="display: flex; align-items: center; margin-bottom: 30px; gap: 20px;">
+              <img src="./images/uta logo.png " alt="UTA Logo" style="height: 70px; width: 70px; object-fit: contain; border-radius: 10px; box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);">
+              <div>
+                <h2 style="color: #66ccff; margin: 0;">The University of Texas at Arlington</h2>
+                <p style="color: #ccc;">🎓 M.S. in Information Systems</p>
+                <p style="color: #ccc;">Starting: June 2025</p>
+                <p style="color: #aaa;">Arlington, TX, USA</p>
+              </div>
+            </div>
+            <hr style="border: 0; border-top: 1px solid #444; margin: 20px 0;">
+          
+            <!-- BSc - Khulna University -->
+            <div style="display: flex; align-items: center; margin-bottom: 30px; gap: 20px;">
+              <img src="./images/KuLogo.png" alt="Khulna University Logo" style="height: 70px; width: 70px; object-fit: contain; border-radius: 10px; box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);">
+              <div>
+                <h2 style="color: #99ffcc; margin: 0;">Khulna University</h2>
+                <p style="color: #ccc;">🎓 B.Sc. in Computer Science and Engineering (2023)</p>
+                <p style="color: #ccc;"><strong>Thesis:</strong> Investigating Context-Adaptation Bugs in Micro-clones</p>
+                <p style="color: #ccc;"><strong>Supervisor:</strong> Dr. Manishankar Mondal</p>
+              </div>
+            </div>
+            <hr style="border: 0; border-top: 1px solid #444; margin: 20px 0;">
+          
+            <!-- HSC - Michael Madhusudan College -->
+            <div style="display: flex; align-items: center; margin-bottom: 30px; gap: 20px;">
+              <img src="./images/college logo.png" alt="Michael Madhusudan College Logo" style="height: 70px; width: 70px; object-fit: contain; border-radius: 10px; box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);">
+              <div>
+                <h2 style="color: #ffcc99; margin: 0;">Govt. Michael Madhusudan College, Jashore</h2>
+                <p style="color: #ccc;">📘 Higher Secondary Certificate (Science)</p>
+                <p style="color: #ccc;">Passing Year: 2017</p>
+              </div>
+            </div>
+            <hr style="border: 0; border-top: 1px solid #444; margin: 20px 0;">
+          
+            <!-- SSC - Police Line School -->
+            <div style="display: flex; align-items: center; gap: 20px;">
+              <img src="./images/school.jpg" alt="Police Line School Logo" style="height: 70px; width: 70px; object-fit: contain; border-radius: 10px; box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);">
+              <div>
+                <h2 style="color: #ff9999; margin: 0;">Police Line Secondary School, Jashore</h2>
+                <p style="color: #ccc;">📗 Secondary School Certificate (Science)</p>
+                <p style="color: #ccc;">Passing Year: 2015</p>
+              </div>
+            </div>
+          </section>
+          
+          <section id="projects" class="section">
+            <h1>💡 Projects</h1>
+          
+            <!-- Project 1 -->
+            <div class="project-card">
+              <h2 class="project-title">Homemade Product Market</h2>
+          
+              <div class="slider-wrapper">
+                <div class="slider" id="slider1">
+                  <img src="./images/f.jpg" alt="Screenshot 1">
+                  <img src="./images/g.jpg" alt="Screenshot 2">
+                  <img src="./images/e.jpg" alt="Screenshot 3">
+                  <img src="./images/c.jpg" alt="Screenshot 4">
+                </div>
+              </div>
+          
+              <div class="project-desc">
+                <p>
+                    A business platform for homemade commodities with integration of payment gateway SSLCOMMERZ.
+                    
+                </p>
+                <a href="https://github.com/malihaarchi18/Homemade-Product-Market/" target="_blank" class="github-link">🔗 GitHub Repo</a>
+              </div>
+            </div>
+          
+            <!-- Project 2 -->
+            <div class="project-card">
+                <h2 class="project-title">Question Bank Simplifier</h2>
+              
+                <div class="single-img-wrapper">
+                  <img src="./images/b.png" alt="Weather App Screenshot">
+                </div>
+              
+                <div class="project-desc">
+                  <p>
+                    A software system for assisting teachers to automatically create exam question sets based on some parameters (i.e. difficulty level, topic and weights)
+                  </p>
+                  <a href=" https://malihaarchi18.github.io/Portfolio/" target="_blank" class="github-link">🔗 GitHub Repo</a>
+                </div>
+              </div>
+              
+          </section>
+          
+    
+  
+        <section id="publications" class="section">
+            <h1 style="color: #f0f0f0; font-size: 2em; margin-bottom: 1.5rem;">📚 Publications</h1>
+          
+            <div style="margin-bottom: 30px;">
+              <h2 style="color: #66ccff;">Context-Adaptation Bugs in Micro-Clones</h2>
+              <p style="color: #ccc; font-size: 1.1em; margin: 5px 0;">
+                <strong>Authors:</strong> Sayeedi Mottakin, <b>Maliha Bintay Zaman</b>, Dr. Manishankar Mondal, and Atanu Shome
+              </p>
+              <p style="color: #ccc; font-size: 1.1em; margin: 5px 0;">
+                <strong>Published in:</strong> In Proceedings of The 2023 30th Asia-Pacific Software Engineering Conference (APSEC), Seoul, Korea, Republic of, 2023, pp. 239-248
+              </p>
+              <p style="color: #ccc; font-size: 1.1em; margin: 5px 0;">
+                <strong>DOI:</strong> <a href="https://doi.org/10.1109/APSEC60848.2023.00034" target="_blank" style="color: #66ccff;">10.1109/APSEC60848.2023.00034</a>
+              </p>
+              <div style="margin-top: 10px;">
+                <a href="https://scholar.google.com/scholar_lookup?title=Context-Adaptation+Bugs+in+Micro-Clones&author=Sayeedi+Mottakin&author=Maliha+Bintay+Zaman&author=Dr.+Manishankar+Mondal&author=Atanu+Shome" target="_blank" style="color: #66ccff; text-decoration: none;">Google Scholar</a> |
+                <a href="URL_TO_PREPRINT_PDF" target="_blank" style="color: #66ccff; text-decoration: none;">Pre-print PDF</a>
+              </div>
+            </div>
+          
+          </section>
+          
+  
+        <!-- contact.html -->
+<section class="contact-section">
+    <h1>📩 Contact Me</h1>
+    <form id="contact-form">
+      <input type="text" id="name" name="from_name" placeholder="Your Name" autocomplete="off" required>
+      <input type="email" id="email" name="reply_to" placeholder="Your Email" autocomplete="off" required>
+      <textarea id="message" name="message" placeholder="Your Message" autocomplete="off" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="form-status"></p>
+  </section>
+
+  <section>
+    <footer class="connect-footer">
+        <h2>🔗 Connect with Me</h2>
+        <div class="social-links">
+          <a href="https://www.facebook.com/maliha.1316" target="_blank">
+            <img src="./images/fb logo.png" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com/maliha_archi/?igsh=YjRyNjh2OTJtdmpx#" target="_blank">
+            <img src="./images/insta logo.jpg" alt="Instagram" />
+          </a>
+          <a href="https://www.linkedin.com/in/maliha-bintay-zaman/" target="_blank">
+            <img src="./images/linkedin.png" alt="LinkedIn" />
+          </a>
+          <a href="https://www.twitter.com/maliha_salehin" target="_blank">
+            <img src="./images/x.png" alt="X" />
+          </a>
+        </div><br><br>
+        <div class="quote-container">
+            <p class="quote">
+                "No heart has ever suffered when it goes in search of its dreams."
+                — Paulo Coelho ✨🌙 (from The Alchemist)
+            </p>
+            <p class="copyright">© Copyright 2025 Maliha Bintay Zaman</p>
+          </div>
+      </footer>
+  </section>
+  
+      </div>
+    </div>
+  </div>
+  
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script> 
+<script src="script.js"></script>
+</body>
+</html>
